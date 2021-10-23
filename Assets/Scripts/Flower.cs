@@ -57,14 +57,14 @@ public class Flower : MonoBehaviour
         7   G   -5
         8   A   -3
         9   B   -1
-        10  C   0
+        10  C   0 ***
         11  D   2
         12  E   4
         13  F   5
         14  G   7
         15  A   9
         16  B   11
-        1y  C   12
+        17  C   12
         18  D   14
         19  E   16
         20  F   17
@@ -73,6 +73,16 @@ public class Flower : MonoBehaviour
         23  B   23
         24  C   24
         25  D   26
+        26  E   28
+        27  F   29
+        28  G   31
+        29  A   33
+        30  B   35
+        31  C   36
+        32  D   38
+        33  E   40
+        34  F   41
+        35  G   43
         */  
 
         //semitone multiplier
@@ -106,6 +116,16 @@ public class Flower : MonoBehaviour
             case 23: stm = 23; break;
             case 24: stm = 24; break;
             case 25: stm = 26; break;
+            case 26: stm = 28; break;
+            case 27: stm = 29; break;
+            case 28: stm = 31; break;
+            case 29: stm = 33; break;
+            case 30: stm = 35; break;
+            case 31: stm = 36; break;
+            case 32: stm = 38; break;
+            case 33: stm = 40; break;
+            case 34: stm = 41; break;
+            case 35: stm = 43; break;
         }
         myAudioSource.pitch = Mathf.Pow(1.05946f, stm);
         myAudioSource.PlayOneShot(myAudioSource.clip, audioScale);
